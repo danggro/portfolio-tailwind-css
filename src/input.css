@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-50 bg-opacity-70 bg-white;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-line {
+  @apply bg-dark w-[30px] h-[2px] my-2 block;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-45;
+}
+
+.head-content {
+  @apply text-primary font-bold tracking-widest uppercase lg:text-lg;
+}
+
+.head-content-2 {
+  @apply text-dark text-3xl font-bold leading-relaxed lg:text-5xl lg:leading-relaxed;
+}
